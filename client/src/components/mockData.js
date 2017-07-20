@@ -62,6 +62,69 @@ module.exports = {
           'id': 3
         }
       ]
+    },
+    {
+      'profile': {
+        'first': 'David',
+        'last': 'Oh',
+        'display': 'David Oh',
+        'id': 2,
+        'img_url': 'https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/17626205_809442785878060_6151846930082907172_n.jpg?oh=4ee311bece4cb82dc43dab97fde8e37a&oe=59FFEDBA'
+      },
+      'stories': [
+        {
+          'type': 'image/jpeg',
+          'src': 'https://s3-us-west-1.amazonaws.com/vrstories/01391021_Estonian_Dance_360-1024x512.jpg',
+          'id': 2
+        },
+        {
+          'type': 'video/mp4',
+          'src': 'https://s3-us-west-1.amazonaws.com/vrstories/360+degree+Video-+Pugs+Chompin+down.mp4',
+          'id': 2
+        }
+      ]
+    },
+    {
+      'profile': {
+        'first': 'David',
+        'last': 'Oh',
+        'display': 'David Oh',
+        'id': 2,
+        'img_url': 'https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/17626205_809442785878060_6151846930082907172_n.jpg?oh=4ee311bece4cb82dc43dab97fde8e37a&oe=59FFEDBA'
+      },
+      'stories': [
+        {
+          'type': 'image/jpeg',
+          'src': 'https://s3-us-west-1.amazonaws.com/vrstories/01391021_Estonian_Dance_360-1024x512.jpg',
+          'id': 2
+        },
+        {
+          'type': 'video/mp4',
+          'src': 'https://s3-us-west-1.amazonaws.com/vrstories/360+degree+Video-+Pugs+Chompin+down.mp4',
+          'id': 2
+        }
+      ]
+    },
+    {
+      'profile': {
+        'first': 'David',
+        'last': 'Oh',
+        'display': 'David Oh',
+        'id': 2,
+        'img_url': 'https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/17626205_809442785878060_6151846930082907172_n.jpg?oh=4ee311bece4cb82dc43dab97fde8e37a&oe=59FFEDBA'
+      },
+      'stories': [
+        {
+          'type': 'image/jpeg',
+          'src': 'https://s3-us-west-1.amazonaws.com/vrstories/01391021_Estonian_Dance_360-1024x512.jpg',
+          'id': 2
+        },
+        {
+          'type': 'video/mp4',
+          'src': 'https://s3-us-west-1.amazonaws.com/vrstories/360+degree+Video-+Pugs+Chompin+down.mp4',
+          'id': 2
+        }
+      ]
     }
   ],
 
