@@ -8,24 +8,32 @@ import Profile from './VRProfile.jsx';
 
 
 const VRProfiles = props => {
-  let ringLength = props.friends.length;
-  console.log('numfriends%*^%&%&*%*&^%*&%^*&%*&%', ringLength);
-  let x = -7.1;
-  let z = -10;
+  let n = props.friends.length;
+  console.log('n',n);
+  let start = (n-1) * Math.PI/12;
+  console.log('start', start);
+  let theta = (Math.PI - start)/2;
+  console.log('theta', theta);
+  let x, z, yRotation;
+  let radius = 10;
   return (
     <Entity>
       {
         props.friends.map((friend, i) => {
-          x += 2.9;
-          if (z > -10) {
-            z -= 1;
-          } else { z += 1; }
-
+          x = -Math.cos(theta)*radius;
+          console.log('x', x);
+          z = -Math.sin(theta)*radius;
+          console.log('z', z);
+          yRotation = ((Math.PI/2) - theta)*180/Math.PI;
+          console.log('yRotation', yRotation);
+          theta += (Math.PI/12);
           return (
             <Profile
               i={i}
               x={x}
               z={z}
+              yRotation={yRotation}
+              radius={radius}
               key={i}
               friend={friend}
               currentStory={props.currentStory}

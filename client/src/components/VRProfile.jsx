@@ -9,13 +9,16 @@ const VRProfile = props => {
   let picRadius = 1;
   let playing = '';
   let spacing = 0.2;
+  let yOffset = -4;
+  let xRotation = Math.atan(Math.abs(yOffset)/props.radius);
+  console.log('xrotation', xRotation);
   if (props.currentStory.story.id === props.friend.profile.id) {
     playing = ' I AM PLAYING!!!';
     picRadius = 1.2;
   }
 
   return (
-    <Entity position={{x: props.x + spacing, y: -2, z: props.z}} rotation="-15 0 0">
+    <Entity position={{x: props.x, y: yOffset, z: props.z}} rotation={{x: xRotation, y: props.yRotation, z: 0}}>
       <Entity id='cylinder'
         geometry={{primitive: 'cylinder', radius: picRadius, height: 0.15}}
         rotation= "0 90 90"
